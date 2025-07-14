@@ -1,0 +1,145 @@
+.form-container {
+  background-color: #0a0a0a;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(225, 29, 72, 0.3);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin: 0.75rem 0;
+  border: 2px solid #222;
+  border-radius: 12px;
+  background: #121212;
+  color: #eee;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #e11d48;
+  background: #181818;
+  outline: none;
+}
+
+.form-container input::placeholder {
+  color: #666;
+}
+
+.price-select {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.price-select select, .price-select button {
+  flex: 1;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  line-height: 1.2;
+  border-radius: 8px;
+  border: 2px solid #222;
+  background: #121212;
+  color: #eee;
+  box-sizing: border-box;
+  appearance: none;
+  cursor: pointer;
+}
+
+.price-select select::-ms-expand {
+  display: none;
+}
+
+.price-select select option {
+  background: #121212;
+  color: #eee;
+}
+
+.price-select button {
+  background: #e11d48;
+  transition: background 0.3s;
+}
+
+.price-select button:hover {
+  background: #be123c;
+}
+
+.form-container button[type="submit"] {
+  background: #e11d48;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-container button[type="submit"]:hover {
+  background: #be123c;
+  transform: scale(1.03);
+}
+
+.error-box {
+  margin-top: 1.5rem;
+  background: #1f1f1f;
+  border: 2px solid #dc2626;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #f87171;
+  text-align: left;
+}
+
+.success-message {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: #1f1f1f;
+  border: 2px solid #22c55e;
+  border-radius: 12px;
+  color: #eee;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-button {
+  margin-top: 1rem;
+  background: #444;
+  color: #eee;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: #666;
+}
